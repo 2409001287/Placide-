@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Types Demonstration</title>
+  <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+  <style>
+    /* Internal CSS */
+    .internal-css {
+      background-color: #e6f4ff;
+      border: 2px solid #3399ff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    .internal-css h2 {
+      color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:#1a237e;">CSS Types Demonstration</h1>
+
+  <!-- Inline CSS -->
+  <div style="background-color: #ffe6e6; border: 2px solid #cc0000; padding: 20px; border-radius: 10px; margin: 30px auto; width: 80%;">
+    <h2 style="color: #b30000;">Inline CSS</h2>
+    <p>This div uses inline CSS applied directly to HTML elements using the style attribute.</p>
+  </div>
+
+  <!-- Internal CSS -->
+  <div class="internal-css">
+    <h2>Internal CSS</h2>
+    <p>This div uses CSS defined in the &lt;style&gt; section of the document header.</p>
+  </div>
+
+  <!-- External CSS -->
+  <div class="external-css">
+    <h2>External CSS</h2>
+    <p>This div uses CSS from an external stylesheet file (styles.css).</p>
+  </div>
+</body>
+</html>
